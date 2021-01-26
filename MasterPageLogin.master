@@ -1,0 +1,201 @@
+﻿<%@ master language="C#" autoeventwireup="true" inherits="MasterPageLogin, App_Web_masterpagelogin.master.cdcab7d2" %>
+
+<%@ Register assembly="DevExpress.Web.v12.1, Version=12.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" namespace="DevExpress.Web.ASPxMenu" tagprefix="dx" %>
+<%@ Register assembly="DevExpress.Web.v12.1, Version=12.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" namespace="DevExpress.Web.ASPxRoundPanel" tagprefix="dx" %>
+<%@ Register assembly="DevExpress.Web.v12.1, Version=12.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" namespace="DevExpress.Web.ASPxPanel" tagprefix="dx" %>
+
+<%@ Register assembly="DevExpress.Web.ASPxEditors.v12.1, Version=12.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" namespace="DevExpress.Web.ASPxEditors" tagprefix="dx" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />    
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="App_Themes/CustomTheme/Css/Textbox/Textbox1/twitterStyle.css" rel="stylesheet"
+        type="text/css" />
+    <link href="App_Themes/CustomTheme/Css/Button/Button2/gh-buttons.css" rel="stylesheet"
+        type="text/css" />
+    <style type="text/css">
+	    BODY {
+		    font-size: 14px; 
+		    font-family: verdana; 
+		    background-color: #EEEEEE; 
+		    background-position: center;
+		    margin: 5px;
+	    }	
+        .dxeBase
+        {
+	        font: 12px Tahoma;
+        }
+        .header 
+        { 
+            width: 100%; 
+            height:100%;
+            margin: 0;
+            border-right: lightblue 1px solid; 
+            border-top: lightblue 1px solid; 
+            border-left: lightblue 1px solid; 
+            border-bottom: lightblue 1px solid;
+            filter: progid:DXImageTransform.Microsoft.Gradient(startColorStr='lightblue', endColorStr='#FFFFFF', gradientType ='1'); 
+            background: -webkit-linear-gradient(left, lightblue, white);
+            border-radius: 0 0 10px 0;
+            box-shadow: 5px 5px 5px lightgray;
+        } 
+        .pie_radius
+        {
+            width:100%;
+            height:100%;
+<%--            background: -ms-linear-gradient(left, lightblue, white);
+            background: -webkit-linear-gradient(left, lightblue, white);
+            -pie-background:linear-gradient(360deg, lightblue, white);
+            border-right: lightblue 1px solid; 
+            border-top: lightblue 1px solid; 
+            border-left: lightblue 1px solid; 
+            border-bottom: lightblue 1px solid;--%>
+            border-radius: 0 0 10px 0;
+            box-shadow: #666 0px 0px 0px;
+            position:relative;
+            behavior:url(App_Themes/CustomTheme/Css/radius/PIE.htc);
+        }
+        .footer
+        { 
+            width: 100%; 
+            height:100%;
+            margin: 0;
+            border-right: lightblue 1px solid; 
+            border-top: lightblue 1px solid; 
+            border-left: lightblue 1px solid; 
+            border-bottom: lightblue 1px solid;
+            filter: progid:DXImageTransform.Microsoft.Gradient(startColorStr='lightblue', endColorStr='#FFFFFF', gradientType ='1'); 
+            background: -webkit-linear-gradient(left, lightblue, white);
+            box-shadow: 5px 5px 5px lightgray;
+        }   
+	    .content {
+            height:1500px;
+		    width: 100%;
+	    }
+        .style1
+        {
+            width: 100%;
+        }
+        body, html {
+            height: 100%;
+            margin: 0;
+        }
+        .bg {
+            /* The image used */
+            background-image: url("App_Themes/Basic/bg0.png");
+            /* Full height */
+            height: 100%; 
+            /* Center and scale the image nicely */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .pos_fixed
+        {
+	        position:fixed;
+	        top:90%;
+	        right:5px;
+            bottom: 5px;
+        }
+        </style>
+    <script type="text/javascript">
+    <%--
+    防止誤觸Backspace鍵跳離編輯中網頁
+    --%>
+        function killBackSpace(e) {
+            e = e ? e : window.event;
+            var t = e.target ? e.target : e.srcElement ? e.srcElement : null;
+            if (t && t.tagName && (t.type && /(password)|(text)|(file)/.test(t.type.toLowerCase())) || t.tagName.toLowerCase() == 'textarea')
+                return true;
+            var k = e.keyCode ? e.keyCode : e.which ? e.which : null;
+            if (k == 8) {
+                if (e.preventDefault)
+                    e.preventDefault();
+                return false;
+            };
+            return true;
+        };
+        if (typeof document.addEventListener != 'undefined')
+            document.addEventListener('keydown', killBackSpace, false);
+        else if (typeof document.attachEvent != 'undefined')
+            document.attachEvent('onkeydown', killBackSpace);
+        else {
+            if (document.onkeydown != null) {
+                var oldOnkeydown = document.onkeydown;
+                document.onkeydown = function (e) {
+                    oldOnkeydown(e);
+                    killBackSpace(e);
+                };
+            }
+            else
+                document.onkeydown = killBackSpace;
+        }
+    </script>
+</head>
+<body class="bg">
+    <form id="form1" runat="server">
+    <div>
+    <asp:ScriptManager ID="ScriptManager1" runat="server">
+    </asp:ScriptManager>
+        <table class="pie_radius">
+            <tr>
+                <td valign="top">
+                    <dx:ASPxImage ID="ASPxImage1" runat="server" 
+                        ImageUrl="~/App_Themes/Basic/logo.png" Width="60px" IsPng="True" 
+                        Height="60px" ToolTip="總公司">
+                    </dx:ASPxImage>
+                </td>
+                <td valign="top">
+                    <table class="style1">
+                        <tr>
+                            <td align="right">
+                                <dx:ASPxLabel ID="ASPxLabel1" runat="server" Font-Names="王漢宗細圓體繁" 
+                        ForeColor="Black" Text="支持的瀏覽器有" Font-Size="X-Small">
+                                </dx:ASPxLabel>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="right">
+                                <asp:HyperLink ID="HyperLink4" runat="server" 
+                                    ImageUrl="~/App_Themes/Basic/edge.png" Target="_blank" ToolTip="安裝edge" 
+                                    NavigateUrl="https://www.microsoft.com/zh-tw/edge">HyperLink</asp:HyperLink>
+                                <asp:HyperLink ID="HyperLink5" runat="server" 
+                                    ImageUrl="~/App_Themes/Basic/ie.png" Target="_blank" ToolTip="ie">HyperLink</asp:HyperLink>
+                                <asp:HyperLink ID="HyperLink2" runat="server" 
+                                    ImageUrl="~/App_Themes/Basic/chrome.png" 
+                                    NavigateUrl="https://www.google.com/intl/zh-TW/chrome/" Target="_blank" 
+                                    ToolTip="安裝chrome">HyperLink</asp:HyperLink>
+                                <asp:HyperLink ID="HyperLink1" runat="server" 
+                                    ImageUrl="~/App_Themes/Basic/firefox.png" 
+                                    NavigateUrl="https://www.mozilla.org/zh-TW/firefox/" Target="_blank" 
+                                    ToolTip="安裝firefox">HyperLink</asp:HyperLink>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            </table>
+    </div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+        <div align="center">
+            <br />
+            <br />
+            <br />
+<%--            <dx:ASPxLabel ID="labCOPYRIGHT" runat="server" Font-Names="王漢宗細圓體繁" 
+                    ForeColor="Black" Text="labCOPYRIGHT" Width="100%" 
+                CssClass="pos_fixed" ClientVisible="False">
+            </dx:ASPxLabel>
+--%>            <asp:HyperLink ID="HyperLink6" runat="server" CssClass="pos_fixed" 
+                ImageUrl="~/App_Themes/Basic/fujitsu.png" 
+                NavigateUrl="https://www.fujitsu.com/tw/" Target="_blank"></asp:HyperLink>
+        </div>
+    </form>
+</body>
+</html>

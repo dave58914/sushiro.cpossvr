@@ -1,0 +1,9 @@
+﻿/*表格樣式*/
+ table.blueTable {border:15px;width:90%;background:#ccc; margin: 10px auto;border-collapse:collapse;}
+/*border-collapse:collapse合併內外邊距(去除表格單元格預設的2個畫素內外邊距*/
+ table.blueTable th, table.blueTable td {height:25px;line-height:25px;text-align:center;border:1px solid #ccc;}
+ table.blueTable th {background:#eee;font-weight:bold;font-size:16px;}
+ table.blueTable tr {background:#fff;}
+ table.blueTable tr:hover {background:rgb(238, 211, 210);}
+ table.blueTable td a {color:#06f;text-decoration:none;}
+ table.blueTable td a:hover {color:#06f;text-decoration:underline;}
