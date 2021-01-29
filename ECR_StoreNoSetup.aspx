@@ -474,37 +474,40 @@
                                                                 </dx:GridViewDataTextColumn>
                                                                 <dx:GridViewDataTextColumn Caption="加密驗證碼" ExportWidth="70" 
                                                                     FieldName="CS_CHECK" ShowInCustomizationForm="True" Visible="False" 
-                                                                    VisibleIndex="35">
+                                                                    VisibleIndex="36">
                                                                     <PropertiesTextEdit MaxLength="70">
                                                                     </PropertiesTextEdit>
                                                                     <HeaderStyle HorizontalAlign="Center" />
                                                                 </dx:GridViewDataTextColumn>
                                                                 <dx:GridViewDataTextColumn Caption="備用" ExportWidth="40" FieldName="FU_SPACE" 
-                                                                    ShowInCustomizationForm="True" Visible="False" VisibleIndex="36">
+                                                                    ShowInCustomizationForm="True" Visible="False" VisibleIndex="37">
                                                                     <PropertiesTextEdit MaxLength="40">
                                                                     </PropertiesTextEdit>
                                                                     <HeaderStyle HorizontalAlign="Center" />
                                                                 </dx:GridViewDataTextColumn>
                                                                 <dx:GridViewDataTextColumn Caption="跳行碼" ExportWidth="2" FieldName="LF" 
-                                                                    ShowInCustomizationForm="True" Visible="False" VisibleIndex="37">
+                                                                    ShowInCustomizationForm="True" Visible="False" VisibleIndex="38">
                                                                     <PropertiesTextEdit MaxLength="2">
                                                                     </PropertiesTextEdit>
                                                                     <HeaderStyle HorizontalAlign="Center" />
                                                                 </dx:GridViewDataTextColumn>
                                                                 <dx:GridViewDataTextColumn Caption="建檔人員" ExportWidth="16" 
                                                                     FieldName="CREATE_ID" ShowInCustomizationForm="True" Visible="False" 
-                                                                    VisibleIndex="38">
+                                                                    VisibleIndex="39">
                                                                     <PropertiesTextEdit MaxLength="16">
                                                                     </PropertiesTextEdit>
                                                                     <HeaderStyle HorizontalAlign="Center" />
                                                                 </dx:GridViewDataTextColumn>
                                                                 <dx:GridViewDataDateColumn Caption="建檔日期" FieldName="CREATE_DT" 
-                                                                    ShowInCustomizationForm="True" Visible="False" VisibleIndex="39">
+                                                                    ShowInCustomizationForm="True" Visible="False" VisibleIndex="40">
                                                                     <PropertiesDateEdit DisplayFormatString="g" EditFormat="DateTime" 
                                                                         EditFormatString="g">
                                                                     </PropertiesDateEdit>
                                                                     <HeaderStyle HorizontalAlign="Center" />
                                                                 </dx:GridViewDataDateColumn>
+                                                                <dx:GridViewDataTextColumn Caption="IDX" FieldName="IDX" 
+                                                                    ShowInCustomizationForm="True" Visible="False" VisibleIndex="35">
+                                                                </dx:GridViewDataTextColumn>
                                                             </Columns>
                                                             <SettingsBehavior AllowFocusedRow="True" ConfirmDelete="True" />
                                                             <SettingsPager AlwaysShowPager="True" PageSize="20" Position="TopAndBottom">
@@ -940,7 +943,8 @@
                         <asp:EntityDataSource ID="edsPOS_storedat" runat="server" 
                             ConnectionString="name=NEWPMSEntities" DefaultContainerName="NEWPMSEntities" 
                             EnableDelete="True" EnableFlattening="False" EnableInsert="True" 
-                            EnableUpdate="True" EntitySetName="POS_storedat" OrderBy="it.NO_STORE">
+                            EnableUpdate="True" EntitySetName="POS_storedat" OrderBy="it.IDX" 
+                            EntityTypeFilter="" Select="">
                         </asp:EntityDataSource>
                         <asp:EntityDataSource ID="edsSYS_storetype" runat="server" 
                             ConnectionString="name=NEWPMSEntities" DefaultContainerName="NEWPMSEntities" 

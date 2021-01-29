@@ -324,7 +324,7 @@
                         <asp:EntityDataSource ID="edsPOS_ecrdat" runat="server" 
                             ConnectionString="name=NEWPMSEntities" DefaultContainerName="NEWPMSEntities" 
                             EnableFlattening="False" EntitySetName="vPOS_ecrdat" 
-                            OrderBy="it.ECR_FLOOR,it.ECR_NO">
+                            OrderBy="it.IDX,it.ECR_NO" EntityTypeFilter="" Select="">
                         </asp:EntityDataSource>
                         <asp:EntityDataSource ID="edsFTU_TransactionDatalog" runat="server" 
                             ConnectionString="name=NEWPMSEntities" DefaultContainerName="NEWPMSEntities" 

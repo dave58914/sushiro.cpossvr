@@ -86,7 +86,7 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    <dx:ASPxPageControl ID="ASPxPageControl1" runat="server" ActiveTabIndex="1" 
+    <dx:ASPxPageControl ID="ASPxPageControl1" runat="server" ActiveTabIndex="0" 
         Font-Names="王漢宗細圓體繁" Font-Size="Small" TabPosition="Left" Width="100%" 
         Height="800px">
         <TabPages>
@@ -581,7 +581,7 @@
                         <asp:EntityDataSource ID="edsPOS_ecrdat" runat="server" 
                             ConnectionString="name=NEWPMSEntities" DefaultContainerName="NEWPMSEntities" 
                             EnableFlattening="False" EntitySetName="vPOS_ecrdat" 
-                            OrderBy="it.ECR_FLOOR,it.ECR_NO">
+                            OrderBy="it.IDX,it.ECR_NO" EntityTypeFilter="" Select="">
                         </asp:EntityDataSource>
                         <asp:SqlDataSource ID="SqlDataSource1" runat="server" 
                             ConnectionString="<%$ ConnectionStrings:NEWPMSConnectionString %>" 

@@ -305,17 +305,6 @@
                     <br />
                     <br />
                     <br />
-                        <dx:ASPxRoundPanel ID="ASPxRoundPanel1" runat="server" Font-Names="王漢宗細圓體繁" 
-                            Font-Size="12pt" HeaderText="【OLAP_RPT5】" View="GroupBox" Width="100%" 
-                            HorizontalAlign="Center" CssClass="pie_radius" ClientVisible="False">
-                            <PanelCollection>
-                                <dx:PanelContent runat="server" SupportsDisabledAttribute="True">
-                                    <asp:UpdatePanel ID="UpdatePanel2" runat="server">
-                                    </asp:UpdatePanel>
-                                </dx:PanelContent>
-                            </PanelCollection>
-                            <Border BorderStyle="Double" BorderWidth="3px" />
-                        </dx:ASPxRoundPanel>
                     </dx:ContentControl>
                 </ContentCollection>
             </dx:TabPage>

@@ -593,7 +593,7 @@
                         <asp:EntityDataSource ID="edsPOS_storedat" runat="server" 
                             ConnectionString="name=NEWPMSEntities" DefaultContainerName="NEWPMSEntities" 
                             EnableFlattening="False" EntitySetName="vPOS_storedat" 
-                            OrderBy="it.NO_STORE">
+                            OrderBy="it.IDX" EntityTypeFilter="" Select="">
                         </asp:EntityDataSource>
                         <asp:SqlDataSource ID="SqlDataSource1" runat="server" 
                             ConnectionString="<%$ ConnectionStrings:NEWPMSConnectionString %>" 

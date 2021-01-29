@@ -227,24 +227,10 @@
                         </asp:SqlDataSource>
                         <asp:EntityDataSource ID="edsPOS_storedat" runat="server" 
                             ConnectionString="name=NEWPMSEntities" DefaultContainerName="NEWPMSEntities" 
-                            EnableFlattening="False" EntitySetName="vPOS_storedat" OrderBy="it.NO_STORE">
+                            EnableFlattening="False" EntitySetName="vPOS_storedat" OrderBy="it.IDX" 
+                            EntityTypeFilter="" Select="">
                         </asp:EntityDataSource>
                     <br />
-                    <br />
-                    <br />
-                        <dx:ASPxRoundPanel ID="ASPxRoundPanel1" runat="server" Font-Names="王漢宗細圓體繁" 
-                            Font-Size="12pt" HeaderText="【OLAP_RPT5】" View="GroupBox" Width="100%" 
-                            HorizontalAlign="Center" CssClass="pie_radius" ClientVisible="False">
-                            <PanelCollection>
-                                <dx:PanelContent runat="server" SupportsDisabledAttribute="True">
-                                    <asp:UpdatePanel ID="UpdatePanel2" runat="server">
-                                    </asp:UpdatePanel>
-                                    <br />
-                                </dx:PanelContent>
-                            </PanelCollection>
-                            <Border BorderStyle="Double" BorderWidth="3px" />
-                        </dx:ASPxRoundPanel>
-                        <br />
                         <br />
                     </dx:ContentControl>
                 </ContentCollection>
