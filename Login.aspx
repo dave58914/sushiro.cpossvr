@@ -34,7 +34,6 @@
         {
             width: 47px;
         }
-        
         .form-control-login {
             width: 100%;
             border: 1px solid #aaa;
@@ -80,7 +79,6 @@
             color: #fff;
             background-color: dodgerBlue;
         }
-        
         .form-control-pwd {
             width: 100%;
             border: 1px solid #aaa;
@@ -126,10 +124,6 @@
             color: #fff;
             background-color: dodgerBlue;
         }
-
-
-        
-        
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
@@ -141,7 +135,6 @@
                         <PanelCollection>
                             <dx:PanelContent runat="server" SupportsDisabledAttribute="True">
                                 <div align="center">
-                                    <br />
                                     <br />
                                     <br />
                                     <br />
@@ -229,9 +222,10 @@
                                                 </td>
                                                 <td align="left" style="padding-left: 10px">
                                                     <dx:ASPxButton ID="ASPxButton2" runat="server" AllowFocus="False" 
-                                                        AutoPostBack="False" CssClass="button pill" CssPostfix="button" 
+                                                        CssClass="button pill" CssPostfix="button" 
                                                         Font-Bold="False" Font-Names="王漢宗細圓體繁" Font-Size="Small" 
-                                                        HorizontalAlign="Center" OnClick="ASPxButton2_Click" Text="重置" Width="120px">
+                                                        HorizontalAlign="Center" OnClick="ASPxButton2_Click" Text="重置" 
+                                                        Width="120px">
                                                         <Image Url="~/App_Themes/Basic/cancel.png" Width="22px">
                                                         </Image>
                                                     </dx:ASPxButton>
