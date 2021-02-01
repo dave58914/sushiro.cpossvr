@@ -148,7 +148,7 @@
                 <td valign="top">
                     <dx:ASPxImage ID="ASPxImage1" runat="server" 
                         ImageUrl="~/App_Themes/Basic/logo.png" Width="60px" IsPng="True" 
-                        Height="60px" ToolTip="總公司">
+                        Height="60px" ToolTip="企業網站">
                     </dx:ASPxImage>
                 </td>
                 <td valign="top">
