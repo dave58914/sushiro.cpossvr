@@ -48,6 +48,7 @@
     </siteMapNode>
     <siteMapNode url="" title="其它">
       <siteMapNode url="http://13.85.27.121/fujitsu-web.tmp/" title="下載" description="檔案下載" target="_blank" />
+      <siteMapNode url="http://13.85.27.121/ftuTransactionData/" title="交易資料XML檔上傳查詢" description="交易資料XML檔上傳查詢" target="_blank" />
     </siteMapNode>
   </siteMapNode>
 </siteMap>
