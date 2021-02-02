@@ -276,7 +276,7 @@
                                 <SubMenuStyle HorizontalAlign="Left" VerticalAlign="Middle" />
                             </dx:MenuItem>
                             <dx:MenuItem Name="Item99992" Text="" 
-                                NavigateUrl="~/SYS_sitemap.aspx?Sel=SYS_sitemap.aspx">
+                                NavigateUrl="~/SYS_sitemap.aspx">
                                 <Image ToolTip="網站地圖" Url="~/App_Themes/Basic/sitemap.png">
                                 </Image>
                                 <ItemStyle BackColor="#33B5E5" HorizontalAlign="Left" VerticalAlign="Middle">
