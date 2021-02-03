@@ -125,6 +125,18 @@
             background-color: dodgerBlue;
         }
     </style>
+    <script type="text/javascript" language="javascript">
+        function controlEnter(obj, event) {
+            var keyCode = event.keyCode ? event.keyCode : event.which ? event.which : event.charCode;
+            if (keyCode == 13) {
+                document.getElementById(obj).focus();
+                return false;
+            }
+            else {
+                return true;
+            }
+        }
+    </script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <div align="center">
