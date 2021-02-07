@@ -368,6 +368,48 @@
                                                                     <ValueTotalStyle Font-Names="王漢宗細圓體繁">
                                                                     </ValueTotalStyle>
                                                                 </dx:PivotGridField>
+                                                                <dx:PivotGridField ID="fieldREPTYPE0" Area="DataArea" AreaIndex="8" 
+                                                                    Caption="內用" CellFormat-FormatString="#,##0" CellFormat-FormatType="Numeric" 
+                                                                    FieldName="REPTYPE0" TotalCellFormat-FormatString="#,##0" 
+                                                                    TotalCellFormat-FormatType="Numeric" TotalValueFormat-FormatString="#,##0" 
+                                                                    TotalValueFormat-FormatType="Numeric" ValueFormat-FormatString="#,##0" 
+                                                                    ValueFormat-FormatType="Numeric">
+                                                                    <CellStyle Font-Names="王漢宗細圓體繁">
+                                                                    </CellStyle>
+                                                                    <HeaderStyle Font-Names="王漢宗細圓體繁" />
+                                                                    <ValueStyle Font-Names="王漢宗細圓體繁">
+                                                                    </ValueStyle>
+                                                                    <ValueTotalStyle Font-Names="王漢宗細圓體繁">
+                                                                    </ValueTotalStyle>
+                                                                </dx:PivotGridField>
+                                                                <dx:PivotGridField ID="fieldREPTYPE1" Area="DataArea" AreaIndex="9" 
+                                                                    Caption="外送" CellFormat-FormatString="#,##0" CellFormat-FormatType="Numeric" 
+                                                                    FieldName="REPTYPE1" TotalCellFormat-FormatString="#,##0" 
+                                                                    TotalCellFormat-FormatType="Numeric" TotalValueFormat-FormatString="#,##0" 
+                                                                    TotalValueFormat-FormatType="Numeric" ValueFormat-FormatString="#,##0" 
+                                                                    ValueFormat-FormatType="Numeric">
+                                                                    <CellStyle Font-Names="王漢宗細圓體繁">
+                                                                    </CellStyle>
+                                                                    <HeaderStyle Font-Names="王漢宗細圓體繁" />
+                                                                    <ValueStyle Font-Names="王漢宗細圓體繁">
+                                                                    </ValueStyle>
+                                                                    <ValueTotalStyle Font-Names="王漢宗細圓體繁">
+                                                                    </ValueTotalStyle>
+                                                                </dx:PivotGridField>
+                                                                <dx:PivotGridField ID="fieldREPTYPE2" Area="DataArea" AreaIndex="10" 
+                                                                    Caption="外帶" CellFormat-FormatString="#,##0" CellFormat-FormatType="Numeric" 
+                                                                    FieldName="REPTYPE2" TotalCellFormat-FormatString="#,##0" 
+                                                                    TotalCellFormat-FormatType="Numeric" TotalValueFormat-FormatString="#,##0" 
+                                                                    TotalValueFormat-FormatType="Numeric" ValueFormat-FormatString="#,##0" 
+                                                                    ValueFormat-FormatType="Numeric">
+                                                                    <CellStyle Font-Names="王漢宗細圓體繁">
+                                                                    </CellStyle>
+                                                                    <HeaderStyle Font-Names="王漢宗細圓體繁" />
+                                                                    <ValueStyle Font-Names="王漢宗細圓體繁">
+                                                                    </ValueStyle>
+                                                                    <ValueTotalStyle Font-Names="王漢宗細圓體繁">
+                                                                    </ValueTotalStyle>
+                                                                </dx:PivotGridField>
                                                             </Fields>
                                                             <OptionsView ShowColumnGrandTotalHeader="False" ShowColumnTotals="False" 
                                                                 ShowRowGrandTotalHeader="False" />
