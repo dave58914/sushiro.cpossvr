@@ -39,76 +39,67 @@
                 <ContentCollection>
                     <dx:ContentControl runat="server" SupportsDisabledAttribute="True">
                         <div align="center">
-                            <dx:ASPxPanel ID="ASPxPanel2" runat="server" RenderMode="Table" Width="400px">
-                                <PanelCollection>
-                                    <dx:PanelContent runat="server" SupportsDisabledAttribute="True">
-                                        <div align="left">
-                                            <table class="style8">
-                                                <tr>
-                                                    <td>
-                                                        <dx:ASPxHyperLink ID="ASPxHyperLink1" runat="server" CssClass="button add icon" 
-                                                            CssPostfix="button" Font-Names="王漢宗細圓體繁" Font-Size="Small" Text="新增商品分類">
-                                                            <ClientSideEvents Click="function(s, e) {
+                            <table class="style8">
+                                <tr>
+                                    <td align="left">
+                                        <dx:ASPxHyperLink ID="ASPxHyperLink1" runat="server" CssClass="button add icon" 
+                                            CssPostfix="button" Font-Names="王漢宗細圓體繁" Font-Size="Small" Text="新增商品分類">
+                                            <ClientSideEvents Click="function(s, e) {
 	grid.AddNewRow();
 }" />
-                                                        </dx:ASPxHyperLink>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <dx:ASPxGridView ID="ASPxGridView1" runat="server" AutoGenerateColumns="False" 
-                                                            ClientInstanceName="grid" DataSourceID="EntityDataSource1" 
-                                                            Font-Names="王漢宗細圓體繁" KeyFieldName="MsgId" 
-                                                            OnCellEditorInitialize="ASPxGridView1_CellEditorInitialize" 
-                                                            OnHtmlRowCreated="ASPxGridView1_HtmlRowCreated" 
-                                                            OnInitNewRow="ASPxGridView1_InitNewRow" 
-                                                            OnRowInserting="ASPxGridView1_RowInserting" 
-                                                            OnRowValidating="ASPxGridView1_RowValidating" Width="500px">
-                                                            <Columns>
-                                                                <dx:GridViewCommandColumn ShowInCustomizationForm="True" VisibleIndex="0" 
-                                                                    Width="60px">
-                                                                    <EditButton Visible="True">
-                                                                    </EditButton>
-                                                                    <DeleteButton Visible="True">
-                                                                    </DeleteButton>
-                                                                </dx:GridViewCommandColumn>
-                                                                <dx:GridViewDataTextColumn FieldName="MsgId" ReadOnly="True" 
-                                                                    ShowInCustomizationForm="True" Visible="False" VisibleIndex="1">
-                                                                    <HeaderStyle HorizontalAlign="Center" />
-                                                                </dx:GridViewDataTextColumn>
-                                                                <dx:GridViewDataTextColumn Caption="商品分類" FieldName="CLASS_NO" 
-                                                                    ShowInCustomizationForm="True" VisibleIndex="2">
-                                                                    <HeaderStyle HorizontalAlign="Center" />
-                                                                </dx:GridViewDataTextColumn>
-                                                                <dx:GridViewDataTextColumn Caption="分類名稱" FieldName="CLASS_NAME" 
-                                                                    ShowInCustomizationForm="True" VisibleIndex="3">
-                                                                    <HeaderStyle HorizontalAlign="Center" />
-                                                                </dx:GridViewDataTextColumn>
-                                                            </Columns>
-                                                            <SettingsBehavior AllowFocusedRow="True" AllowSort="False" 
-                                                                ConfirmDelete="True" />
-                                                            <SettingsPager AlwaysShowPager="True" PageSize="50" Position="TopAndBottom">
-                                                            </SettingsPager>
-                                                            <SettingsEditing EditFormColumnCount="1" />
-                                                            <Styles>
-                                                                <AlternatingRow Enabled="True">
-                                                                </AlternatingRow>
-                                                                <FilterRow Font-Names="王漢宗細圓體繁" Font-Size="Small">
-                                                                </FilterRow>
-                                                            </Styles>
-                                                            <StylesEditors>
-                                                                <TextBox Font-Names="王漢宗細圓體繁">
-                                                                </TextBox>
-                                                            </StylesEditors>
-                                                        </dx:ASPxGridView>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </div>
-                                        <br />
-                                    </dx:PanelContent>
-                                </PanelCollection>
-                            </dx:ASPxPanel>
+                                        </dx:ASPxHyperLink>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="left">
+                                        <dx:ASPxGridView ID="ASPxGridView1" runat="server" AutoGenerateColumns="False" 
+                                            ClientInstanceName="grid" DataSourceID="EntityDataSource1" Font-Names="王漢宗細圓體繁" 
+                                            KeyFieldName="MsgId" 
+                                            OnCellEditorInitialize="ASPxGridView1_CellEditorInitialize" 
+                                            OnHtmlRowCreated="ASPxGridView1_HtmlRowCreated" 
+                                            OnInitNewRow="ASPxGridView1_InitNewRow" 
+                                            OnRowInserting="ASPxGridView1_RowInserting" 
+                                            OnRowValidating="ASPxGridView1_RowValidating">
+                                            <Columns>
+                                                <dx:GridViewCommandColumn ShowInCustomizationForm="True" VisibleIndex="0" 
+                                                    Width="60px">
+                                                    <EditButton Visible="True">
+                                                    </EditButton>
+                                                    <DeleteButton Visible="True">
+                                                    </DeleteButton>
+                                                </dx:GridViewCommandColumn>
+                                                <dx:GridViewDataTextColumn FieldName="MsgId" ReadOnly="True" 
+                                                    ShowInCustomizationForm="True" Visible="False" VisibleIndex="1">
+                                                    <HeaderStyle HorizontalAlign="Center" />
+                                                </dx:GridViewDataTextColumn>
+                                                <dx:GridViewDataTextColumn Caption="商品分類" FieldName="CLASS_NO" 
+                                                    ShowInCustomizationForm="True" VisibleIndex="2" Width="100px">
+                                                    <HeaderStyle HorizontalAlign="Center" />
+                                                </dx:GridViewDataTextColumn>
+                                                <dx:GridViewDataTextColumn Caption="分類名稱" FieldName="CLASS_NAME" 
+                                                    ShowInCustomizationForm="True" VisibleIndex="3" Width="300px">
+                                                    <HeaderStyle HorizontalAlign="Center" />
+                                                </dx:GridViewDataTextColumn>
+                                            </Columns>
+                                            <SettingsBehavior AllowFocusedRow="True" AllowSort="False" 
+                                                ConfirmDelete="True" />
+                                            <SettingsPager AlwaysShowPager="True" PageSize="50" Position="TopAndBottom">
+                                            </SettingsPager>
+                                            <SettingsEditing EditFormColumnCount="1" Mode="Inline" />
+                                            <Styles>
+                                                <AlternatingRow Enabled="True">
+                                                </AlternatingRow>
+                                                <FilterRow Font-Names="王漢宗細圓體繁" Font-Size="Small">
+                                                </FilterRow>
+                                            </Styles>
+                                            <StylesEditors>
+                                                <TextBox Font-Names="王漢宗細圓體繁">
+                                                </TextBox>
+                                            </StylesEditors>
+                                        </dx:ASPxGridView>
+                                    </td>
+                                </tr>
+                            </table>
                             <br />
                         </div>
                     <br />

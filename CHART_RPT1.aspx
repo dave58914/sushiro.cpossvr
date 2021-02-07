@@ -109,7 +109,7 @@
                                                 </tr>
                                                 <tr>
                                                     <td align="left">
-                                                        <asp:Panel ID="Panel6" runat="server" Width="525px" HorizontalAlign="Left">
+                                                        <asp:Panel ID="Panel6" runat="server" Width="750px" HorizontalAlign="Left">
                                                             <table class="style8">
                                                                 <tr>
                                                                     <td align="right" style="font-family: 王漢宗細圓體繁; font-size: small">
@@ -143,7 +143,7 @@
                                                                         </dx:ASPxComboBox>
                                                                     </td>
                                                                     <td align="right" style="font-family: 王漢宗細圓體繁; font-size: small">
-                                                                        輸出</td>
+                                                                        商品排行</td>
                                                                     <td align="left">
                                                                         <dx:ASPxComboBox ID="cbSORT" runat="server" AutoPostBack="True" 
                                                                             Font-Names="王漢宗細圓體繁" Height="28px" 
@@ -156,6 +156,19 @@
                                                                             </Items>
                                                                         </dx:ASPxComboBox>
                                                                     </td>
+                                                                    <td align="left">
+                                                                        結果顯示</td>
+                                                                    <td align="left">
+                                                                        <dx:ASPxComboBox ID="cbTYPE" runat="server" AutoPostBack="True" 
+                                                                            Font-Names="王漢宗細圓體繁" Height="28px" 
+                                                                            OnSelectedIndexChanged="cbTYPE_SelectedIndexChanged" TextFormatString="{0}" 
+                                                                            Width="120px">
+                                                                            <Items>
+                                                                                <dx:ListEditItem Text="商品排行榜" Value="商品排行榜" />
+                                                                                <dx:ListEditItem Text="佔比排行榜" Value="佔比排行榜" />
+                                                                            </Items>
+                                                                        </dx:ASPxComboBox>
+                                                                    </td>
                                                                 </tr>
                                                             </table>
                                                         </asp:Panel>
@@ -165,13 +178,14 @@
                                                                     <td>
                                                                         <dx:ASPxButton ID="ASPxButton1" runat="server" CssClass="button search icon" 
                                                                             CssPostfix="button" Font-Names="王漢宗細圓體繁" Font-Size="Small" 
-                                                                            OnClick="ASPxButton1_Click" Text="排行" Width="100px">
+                                                                            OnClick="ASPxButton1_Click" Text="排行" Width="100px" ClientVisible="False">
                                                                         </dx:ASPxButton>
                                                                     </td>
                                                                     <td>
                                                                         <dx:ASPxButton ID="ASPxButton2" runat="server" CssClass="button search icon" 
                                                                             CssPostfix="button" Font-Names="王漢宗細圓體繁" Font-Size="Small" 
-                                                                            OnClick="ASPxButton2_Click" Text="排行占比" Width="100px">
+                                                                            OnClick="ASPxButton2_Click" Text="排行占比" Width="100px" 
+                                                                            ClientVisible="False">
                                                                         </dx:ASPxButton>
                                                                     </td>
                                                                 </tr>
