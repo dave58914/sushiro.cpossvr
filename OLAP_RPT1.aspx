@@ -48,7 +48,7 @@
                                             <table class="style12">
                                                 <tr>
                                                     <td>
-                                                        <asp:Panel ID="Panel3" runat="server" Font-Names="王漢宗細圓體繁" Width="775px">
+                                                        <asp:Panel ID="Panel3" runat="server" Font-Names="王漢宗細圓體繁" Width="1000px">
                                                             <table class="style8">
                                                                 <tr>
                                                                     <td align="right" style="font-family: 王漢宗細圓體繁; font-size: small">
@@ -107,6 +107,23 @@
                                                                         <asp:Button ID="reloadOLAP" runat="server" CssClass="button" Height="28px" 
                                                                             OnClick="reloadOLAP_Click" Text="R" ToolTip="重設OLAP狀態" />
                                                                     </td>
+                                                                    <td align="right">
+                                                                        模板報表</td>
+                                                                    <td align="left">
+                                                                        <dx:ASPxComboBox ID="cbTYPE" runat="server" AutoPostBack="True" 
+                                                                            Font-Names="王漢宗細圓體繁" Height="28px" 
+                                                                            OnSelectedIndexChanged="cbTYPE_SelectedIndexChanged" TextFormatString="{0}" 
+                                                                            Width="120px">
+                                                                            <Items>
+                                                                                <dx:ListEditItem Text="請選擇.." Value="請選擇.." />
+                                                                                <dx:ListEditItem Text="營收統計報表" Value="營收統計報表" />
+                                                                                <dx:ListEditItem Text="收銀機統計報表" Value="收銀機統計報表" />
+                                                                                <dx:ListEditItem Text="收銀員統計報表" Value="收銀員統計報表" />
+                                                                                <dx:ListEditItem Text="目標營收統計報表" Value="目標營收統計報表" />
+                                                                                <dx:ListEditItem Text="時段統計報表" Value="時段統計報表" />
+                                                                            </Items>
+                                                                        </dx:ASPxComboBox>
+                                                                    </td>
                                                                 </tr>
                                                             </table>
                                                         </asp:Panel>
@@ -128,7 +145,7 @@
                                                                     <ValueTotalStyle Font-Names="王漢宗細圓體繁">
                                                                     </ValueTotalStyle>
                                                                 </dx:PivotGridField>
-                                                                <dx:PivotGridField ID="fieldECRFLOOR1" Area="RowArea" AreaIndex="1" 
+                                                                <dx:PivotGridField ID="fieldECR_FLOOR" Area="RowArea" AreaIndex="2" 
                                                                     Caption="店別" FieldName="ECR_FLOOR">
                                                                     <CellStyle Font-Names="王漢宗細圓體繁">
                                                                     </CellStyle>
@@ -138,7 +155,7 @@
                                                                     <ValueTotalStyle Font-Names="王漢宗細圓體繁">
                                                                     </ValueTotalStyle>
                                                                 </dx:PivotGridField>
-                                                                <dx:PivotGridField ID="fieldECRNO" AreaIndex="3" Caption="機號" 
+                                                                <dx:PivotGridField ID="fieldECRNO" AreaIndex="2" Caption="機號" 
                                                                     FieldName="ECR_NO">
                                                                     <CellStyle Font-Names="王漢宗細圓體繁">
                                                                     </CellStyle>
@@ -178,7 +195,7 @@
                                                                     <ValueTotalStyle Font-Names="王漢宗細圓體繁">
                                                                     </ValueTotalStyle>
                                                                 </dx:PivotGridField>
-                                                                <dx:PivotGridField ID="fieldGIFTTOKENAMT" AreaIndex="5" Caption="現金禮券" 
+                                                                <dx:PivotGridField ID="fieldGIFTTOKENAMT" AreaIndex="4" Caption="現金禮券" 
                                                                     CellFormat-FormatString="#,##0" CellFormat-FormatType="Numeric" 
                                                                     FieldName="GIFT_TOKEN_AMT" GrandTotalCellFormat-FormatString="#,##0" 
                                                                     GrandTotalCellFormat-FormatType="Numeric" TotalCellFormat-FormatString="#,##0" 
@@ -293,7 +310,7 @@
                                                                     <ValueTotalStyle Font-Names="王漢宗細圓體繁">
                                                                     </ValueTotalStyle>
                                                                 </dx:PivotGridField>
-                                                                <dx:PivotGridField ID="fieldSALENAME" AreaIndex="4" Caption="收銀員" 
+                                                                <dx:PivotGridField ID="fieldSALENAME" AreaIndex="3" Caption="收銀員" 
                                                                     FieldName="SALE_NAME">
                                                                     <CellStyle Font-Names="王漢宗細圓體繁">
                                                                     </CellStyle>
@@ -303,7 +320,7 @@
                                                                     <ValueTotalStyle Font-Names="王漢宗細圓體繁">
                                                                     </ValueTotalStyle>
                                                                 </dx:PivotGridField>
-                                                                <dx:PivotGridField ID="fieldSYSTIME" AreaIndex="2" Caption="時段" 
+                                                                <dx:PivotGridField ID="fieldSYSTIME" AreaIndex="1" Caption="時段" 
                                                                     FieldName="SYS_TIME">
                                                                     <CellStyle Font-Names="王漢宗細圓體繁">
                                                                     </CellStyle>
@@ -320,7 +337,7 @@
                                                                     <HeaderStyle Font-Names="王漢宗細圓體繁" />
                                                                 </dx:PivotGridField>
                                                                 <dx:PivotGridField ID="fieldSYSWEEK" AreaIndex="1" Caption="星期" 
-                                                                    FieldName="SYS_WEEK">
+                                                                    FieldName="SYS_WEEK" Area="RowArea">
                                                                     <HeaderStyle Font-Names="王漢宗細圓體繁" />
                                                                 </dx:PivotGridField>
                                                                 <dx:PivotGridField ID="fieldBUDGETAMT" Area="DataArea" AreaIndex="5" 
